@@ -9,7 +9,9 @@
   <body>
     <div id="app">
       <ul>
-        <li v-for="task in tasks">{{task}}</li>
+        <li v-for="task in tasks">
+          <span>{{task.name}}</span>
+        </li>
       </ul>
 
       <form v-on:submit.prevent="saveNewTask">
