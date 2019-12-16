@@ -4,11 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
   new Vue({
     el: "#app",
     data: {
-      todos: ["Buy shopping", "Clean bathroom", "Car's MOT"]
+      tasks: ["Buy shopping", "Clean bathroom", "Car's MOT"]
     },
+
     methods: {
-      saveNewItem: function() {
-        this.todos.push();
+      saveNewTask: function() {
+        this.tasks.push(this.newTask);
+        this.newTask = "";
       }
     }
   });

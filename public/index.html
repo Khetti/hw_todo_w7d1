@@ -9,8 +9,14 @@
   <body>
     <div id="app">
       <ul>
-        <li v-for="todo in todos">{{todo}}</li>
+        <li v-for="task in tasks">{{task}}</li>
       </ul>
+
+      <form v-on:submit.prevent="saveNewTask">
+        <label for="new-task">Add a New Task:</label>
+        <input v-model="newTask" type="text" id="new-task" />
+        <input type="submit" value="Save New Task" />
+      </form>
     </div>
   </body>
 </html>
