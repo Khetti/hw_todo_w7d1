@@ -12,6 +12,14 @@
   padding: 10px;
 }
 
+#high-priority {
+  color: #f2360c;
+}
+
+#low-priority {
+  color: #1a681e;
+}
+
 ul {
 
   padding: 0;
@@ -37,13 +45,8 @@ li button {
   cursor: pointer;
 }
 
-li.default {
-  border: 2px solid #f2360c;
-}
-
 li.lowPriority {
   border: 2px solid #1a681e;
-  color: #1a681e;
 }
 
 li.highPriority {

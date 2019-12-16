@@ -14,10 +14,10 @@
       <form v-on:submit.prevent="saveNewTask">
         <label for="new-task"></label>
         <input v-model="newTask" type="text" id="new-task" />
-        <label for="high-priority">High</label>
-        <input type="radio" name="priority" id="high-priority">
-        <label for="low-priority">Low</label>
-        <input type="radio" name="priority" id="low-priority">
+        <label for="high-priority" id="high-priority">High</label>
+        <input v-model="priorityChoice" type="radio" name="priority" value="high" id="high-priority">
+        <label for="low-priority" id="low-priority">Low</label>
+        <input v-model="priorityChoice" type="radio" name="priority" value="low" id="low-priority" checked>
         <input type="submit" value="Save Item" id="submit-button" />
       </form>
       <ul>

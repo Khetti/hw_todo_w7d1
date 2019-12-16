@@ -9,11 +9,16 @@ document.addEventListener('DOMContentLoaded', () => {
         {name: "Clean Bathroom", highPriority: true},
         {name: "Car's MOT", highPriority: false}
       ],
-      newTask: ""
+      newTask: "",
+      priorityChoice: ""
     },
     methods: {
       saveNewTask: function() {
-        let taskObject = {name: this.newTask, highPriority: true};
+        let priority = false;
+        if (this.priorityChoice === "high"){
+          priority = true;
+        }
+        let taskObject = {name: this.newTask, highPriority: priority};
         this.tasks.push(taskObject);
         this.newTask = "";
       }
