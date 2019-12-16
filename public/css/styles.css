@@ -1,11 +1,19 @@
 #app {
   width: 60%;
   margin: 0 auto;
-  font-family: 'Lato', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#submit-button {
+  background: #000000;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
 }
 
 ul {
-  margin: 0;
+
   padding: 0;
   list-style-type: none;
 }
@@ -27,6 +35,10 @@ li button {
   border: none;
   padding: 10px;
   cursor: pointer;
+}
+
+li.default {
+  border: 2px solid #f2360c;
 }
 
 li.lowPriority {

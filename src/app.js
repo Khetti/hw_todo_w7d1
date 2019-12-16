@@ -11,10 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
       ],
       newTask: ""
     },
-
     methods: {
       saveNewTask: function() {
-        let taskObject = {name: this.newTask, priority: false};
+        let taskObject = {name: this.newTask, highPriority: true};
         this.tasks.push(taskObject);
         this.newTask = "";
       }
